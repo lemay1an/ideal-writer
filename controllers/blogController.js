@@ -1,15 +1,6 @@
 const Blog = require("../model/blogModel");
 const catchAsync = require("../utils/catchAsync");
+const factory = require("./../controllers/handlerFactory");
 
-exports.createBlog = catchAsync(async (req, res, next) => {
-  const newBlog = await Blog.create({ ...req.body });
-
-  res.status(201).json({
-    status: "succes",
-    data: newBlog,
-  });
-});
-
-exports.getBlog = catchAsync(async (req, res, next) => {
-  const { id } = req.body;
-});
+exports.createBlog = factory.createOne(Blog);
+exports.deleteBlog = factory.deleteOne(Blog);
