@@ -1,4 +1,3 @@
-const { TokenExpiredError } = require("jsonwebtoken");
 const Pricing = require("../model/pricingModel");
 const factory = require("./handlerFactory");
 
