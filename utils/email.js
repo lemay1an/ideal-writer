@@ -23,9 +23,6 @@ exports.sendEmail = async function (
       throw new Error(error.message);
     }
 
-    console.log(isOrderConfirmation);
-    console.log(data);
-
     if (isOrderConfirmation == false) {
       res.status(200).json({
         status: "success",

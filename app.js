@@ -15,11 +15,13 @@ const userRoutes = require("./routes/userRoutes");
 const orderRoute = require("./routes/ordersRoute");
 const blogRoute = require("./routes/blogRoute");
 const priceRoute = require("./routes/pricingRoutes");
+const contactRoute = require("./routes/contactRoute");
 
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/orders", orderRoute);
 app.use("/api/v1/blogs", blogRoute);
 app.use("/api/v1/price", priceRoute);
+app.use("/api/v1/contact", contactRoute);
 
 app.use(globalErrorHandler);
 
