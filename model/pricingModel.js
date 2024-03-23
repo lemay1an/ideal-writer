@@ -10,7 +10,7 @@ const pricingSchema = mongoose.Schema({
     required: [true, "A pricing must have a description"],
   },
   amount: {
-    type: [String],
+    type: String,
     required: [true, "A pricing must have a description"],
   },
   active: {

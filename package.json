@@ -2,9 +2,8 @@
   "name": "ideal",
   "version": "1.0.0",
   "description": "good writter app",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "barber",
