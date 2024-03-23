@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "good writter app",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "keywords": [
     "barber",
