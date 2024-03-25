@@ -11,7 +11,7 @@ router.post("/login", authController.logIn);
 router.delete("/deleteUser/:id", authController.deleteUser);
 router.patch("/markAsAdmin/:id", authController.markAsAdmin);
 
-router.use(authController.protect);
+// router.use(authController.protect);
 router.delete("/delete/me", authController.deleteMe);
 router.patch("/password/update", authController.updatePassword);
 router.get("/logout", authController.logOut);
